@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harison Plublic School</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-extrabold text-indigo-700 tracking-wide">Harison Plublic School</h1>
+      
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-6 font-medium">
+        <a href="#home" class="hover:text-indigo-600">Home</a>
+        <a href="#teachers" class="hover:text-indigo-600">Teachers</a>
+        <a href="#schools" class="hover:text-indigo-600">Schools</a>
+        <a href="#benefits" class="hover:text-indigo-600">Benefits</a>
+        <a href="#facilities" class="hover:text-indigo-600">Facilities</a>
+        <a href="#goals" class="hover:text-indigo-600">Goals</a>
+        <a href="#about" class="hover:text-indigo-600">About</a>
+      </nav>
+
+      <a href="#enroll" class="hidden md:block px-4 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition">Enroll Now</a>
+
+      <!-- Hamburger Button -->
+      <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden bg-white shadow-md md:hidden">
+      <nav class="flex flex-col space-y-4 p-6 font-medium">
+        <a href="#home" class="hover:text-indigo-600">Home</a>
+        <a href="#teachers" class="hover:text-indigo-600">Teachers</a>
+        <a href="#schools" class="hover:text-indigo-600">Schools</a>
+        <a href="#benefits" class="hover:text-indigo-600">Benefits</a>
+        <a href="#facilities" class="hover:text-indigo-600">Facilities</a>
+        <a href="#goals" class="hover:text-indigo-600">Goals</a>
+        <a href="#about" class="hover:text-indigo-600">About</a>
+        <a href="#enroll" class="px-4 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition">Enroll Now</a>
+      </nav>
+    </div>
+  </header>
+
+  
+<!-- Hero Section -->
+ <section id="home" class="h-screen flex items-center justify-center text-center bg-cover bg-center relative" 
+      id="home" class="relative h-screen flex items-center justify-center bg-fixed bg-center bg-cover" 
+  style="background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=80');">    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative text-white z-10 max-w-2xl" data-aos="fade-up">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Welcome to Harison Plublic School</h2>
+      <p class="mb-6 text-lg md:text-xl">Empowering students with knowledge, skills, and values for a brighter future.</p>
+      <a href="#about" class="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg shadow-lg">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Teachers -->
+  <section id="teachers" class="py-20 max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-14" data-aos="fade-up">Meet Our Teachers</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-white shadow-xl rounded-xl p-6 text-center hover:scale-105 transition" data-aos="fade-up">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-indigo-600">
+        <h3 class="text-xl font-semibold">Mr. John Smith</h3>
+        <p class="text-gray-600">Mathematics Expert</p>
+      </div>
+      <div class="bg-white shadow-xl rounded-xl p-6 text-center hover:scale-105 transition" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://randomuser.me/api/portraits/women/45.jpg" class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-indigo-600">
+        <h3 class="text-xl font-semibold">Ms. Sarah Lee</h3>
+        <p class="text-gray-600">Science Innovator</p>
+      </div>
+      <div class="bg-white shadow-xl rounded-xl p-6 text-center hover:scale-105 transition" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://randomuser.me/api/portraits/men/55.jpg" class="w-28 h-28 rounded-full mx-auto mb-4 border-4 border-indigo-600">
+        <h3 class="text-xl font-semibold">Mr. David Kim</h3>
+        <p class="text-gray-600">English Mentor</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schools -->
+  <section id="schools" class="py-20 bg-gradient-to-r from-indigo-50 to-purple-50">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-8" data-aos="fade-up">Our Campuses</h2>
+      <p class="max-w-2xl mx-auto mb-12 text-gray-600" data-aos="fade-up" data-aos-delay="100">
+        Harison Plubic School has campuses across major cities with world-class infrastructure.
+      </p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition" data-aos="zoom-in">
+          <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=800&q=80" alt="Pune Campus" class="h-48 w-full object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">Pune</h3>
+            <p>State-of-the-art labs & modern classrooms.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://images.unsplash.com/photo-1596495577906-0b36b1c2db11?auto=format&fit=crop&w=800&q=80" alt="Mumbai Campus" class="h-48 w-full object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">Mumbai</h3>
+            <p>Sports excellence & cultural development.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=800&q=80" alt="Delhi Campus" class="h-48 w-full object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">Delhi</h3>
+            <p>International exchange & global vision.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section id="benefits" class="py-20 max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-14" data-aos="fade-up">Why Choose Us?</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-8 bg-white rounded-xl shadow-lg text-center hover:shadow-xl transition" data-aos="fade-up">
+        <span class="text-5xl mb-4 block">📚</span>
+        <h3 class="text-xl font-semibold mb-2">Modern Learning</h3>
+        <p>Interactive digital classrooms with advanced tech.</p>
+      </div>
+      <div class="p-8 bg-white rounded-xl shadow-lg text-center hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+        <span class="text-5xl mb-4 block">🌱</span>
+        <h3 class="text-xl font-semibold mb-2">Holistic Growth</h3>
+        <p>Academics + sports + arts for all-round development.</p>
+      </div>
+      <div class="p-8 bg-white rounded-xl shadow-lg text-center hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+        <span class="text-5xl mb-4 block">🌍</span>
+        <h3 class="text-xl font-semibold mb-2">Global Exposure</h3>
+        <p>International programs for future-ready students.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities -->
+  <section id="facilities" class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-14" data-aos="fade-up">Facilities</h2>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="p-6 bg-white rounded-lg shadow" data-aos="zoom-in">🏫 Library</div>
+        <div class="p-6 bg-white rounded-lg shadow" data-aos="zoom-in" data-aos-delay="100">⚽ Playground</div>
+        <div class="p-6 bg-white rounded-lg shadow" data-aos="zoom-in" data-aos-delay="200">🖥 Computer Lab</div>
+        <div class="p-6 bg-white rounded-lg shadow" data-aos="zoom-in" data-aos-delay="300">🎭 Auditorium</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Goals -->
+  <section id="goals" class="py-20 max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-14" data-aos="fade-up">Our Goals</h2>
+    <ul class="space-y-4 max-w-2xl mx-auto text-lg">
+      <li data-aos="fade-right">✔ Foster creativity & innovation</li>
+      <li data-aos="fade-left">✔ Build strong academic foundations</li>
+      <li data-aos="fade-right">✔ Encourage leadership & teamwork</li>
+      <li data-aos="fade-left">✔ Promote social responsibility</li>
+    </ul>
+  </section>
+
+  <!-- Stats Banner -->
+  <section class="bg-indigo-700 text-white py-16 text-center">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+      <div data-aos="zoom-in"><h3 class="text-5xl font-extrabold">5000+</h3><p class="text-lg">Graduates</p></div>
+      <div data-aos="zoom-in" data-aos-delay="100"><h3 class="text-5xl font-extrabold">95%</h3><p class="text-lg">Success Rate</p></div>
+      <div data-aos="zoom-in" data-aos-delay="200"><h3 class="text-5xl font-extrabold">100+</h3><p class="text-lg">Teachers</p></div>
+      <div data-aos="zoom-in" data-aos-delay="300"><h3 class="text-5xl font-extrabold">50+</h3><p class="text-lg">Campuses</p></div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-20 bg-gradient-to-r from-indigo-50 to-purple-50">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-14" data-aos="fade-up">What Parents Say</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-right">
+          <p class="italic">“Bright Future School has transformed my child into a confident leader. The teachers are amazing!”</p>
+          <h3 class="mt-4 font-semibold">– Mrs. Patel</h3>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-left" data-aos-delay="100">
+          <p class="italic">“The facilities and opportunities provided are world-class. I’m glad I chose this school.”</p>
+          <h3 class="mt-4 font-semibold">– Mr. Sharma</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold mb-10" data-aos="fade-up">About Us</h2>
+    <p class="max-w-3xl mx-auto text-lg text-gray-600" data-aos="fade-up" data-aos-delay="100">
+      Harison Public School is dedicated to nurturing leaders of tomorrow. 
+      With modern infrastructure, world-class faculty, and an innovative curriculum, 
+      we prepare students for success in academics and life.
+    </p>
+  </section>
+
+  <!-- Enroll CTA -->
+  <section id="enroll" class="py-20 bg-indigo-700 text-center text-white">
+    <h2 class="text-4xl font-extrabold mb-6" data-aos="zoom-in">Ready to Join Harison Plublic School?</h2>
+    <p class="mb-8 text-lg" data-aos="zoom-in" data-aos-delay="100">Give your child the best start in life with us.</p>
+    <a href="#" class="px-8 py-3 bg-white text-indigo-700 font-semibold rounded-full shadow-lg hover:bg-gray-100 transition">Apply Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-10">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold mb-4">Harison Plublic School</h3>
+        <p>Empowering students for a brighter tomorrow.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="#teachers" class="hover:text-indigo-400">Teachers</a></li>
+          <li><a href="#facilities" class="hover:text-indigo-400">Facilities</a></li>
+          <li><a href="#about" class="hover:text-indigo-400">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+        <p>Email: go@Harison.com</p>
+        <p>Phone: +91 777 222 999</p>
+        <div class="flex space-x-4 mt-4">
+          <a href="#" class="hover:text-indigo-400">🌐</a>
+          <a href="#" class="hover:text-indigo-400">📘</a>
+          <a href="#" class="hover:text-indigo-400">🐦</a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 text-center border-t border-gray-700 pt-4 text-gray-400">
+      &copy; 2025 Harison Plublic School. All rights reserved.
+    </div>
+  </footer>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+
+    // Hamburger Menu Toggle
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
